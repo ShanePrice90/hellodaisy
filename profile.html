@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hello Daisy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/bootstrap-imageupload.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container companionHome">
+      <!-- USING BOOTSTRAP 3.0.3 -->
+      <nav class="navbar navbar-inverse navbar-fixed-top container-fluid">
+        <div class="col-xs-3 text-left">
+          <div class="notificationMenu">
+            <img src="img/icon-notifications.png" alt="Notifications Icon" class="headerIcon" data-toggle="dropdown" />
+            <span class="notification badge">86</span>
+            <ul class="dropdown-menu">
+              <div class="menuHeader">
+                <h3>Notifications</h3>
+                <h5>86 new</h5>
+                <div class="clearfix"></div>
+              </div>
+              <li><a href="#">Photos <span class="notification-menu badge">37</span></a> </li>
+              <li><a href="#">Videos <span class="notification-menu badge">11</span></a></li>
+              <li><a href="#">Comments <span class="notification-menu badge">38</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 text-center">
+          <img src="img/Hello-Daisy-Logo-White.png" alt="Hello Daisy Logo" class="logo img-responsive" />
+        </div>
+        <div class="col-xs-3 text-right">
+          <div class="hamburgerMenu">
+            <img src="img/icon-menu.png" alt="Menu Icon" class="headerIcon" data-toggle="dropdown" />
+            <ul class="dropdown-menu dropdown-menu-right">
+              <div class="menuHeader">
+                <h3>Navigation</h3>
+                <div class="clearfix"></div>
+              </div>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="create-post.html">Create a Post</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="index.html">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="row">
+        <div class="introContent">
+          <div class="col-xs-12">
+            <h1 class="welcomeText">Edit Profile</h1>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="profileSettings">
+            <h2 class="profileName">Shane Price</h2>
+            <img src="img/profile-picture.png" class="img-responsive profileImage" />
+            <div class="imageupload panel panel-default">
+              <div class="file-tab panel-body">
+                <label class="btn btn-tertiary btn-file center-block">
+                  <span>Browse</span>
+                  <!-- The file is stored here. -->
+                  <input type="file" name="image-file">
+                </label>
+                <button type="button" class="btn btn-tertiary center-block removeButton">Remove</button>
+              </div>
+            </div>
+            <p class="userLocation"><i class="fa fa-map-marker" aria-hidden="true"></i>Melton Mowbray, England</p>
+            <div class="col-xs-12">
+              <div class="profileInformation">
+                <label>First Name</label>
+                <div class="input-group">
+                  <input type="text" class="form-control disable" disabled="disabled" value="Shane">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default editBtn" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                  </span>
+                </div>
+                <label>Last Name</label>
+                <div class="input-group">
+                  <input type="text" class="form-control disable" disabled="disabled" value="Price">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default editBtn" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                  </span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-quaternary center-block cancelChanges">Cancel changes</a>
+              <a href="#" class="btn btn-tertiary center-block saveProfile">Save changes</a>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-imageupload.min.js"></script>
+    <script type="text/javascript">
+    $('.img-upload').imgupload({
+      allowedFormats: [ "jpg", "jpeg", "png", "gif" ],
+      previewWidth: 600,
+      previewHeight: 300,
+      maxFileSizeKb: 20488
+    });
+    </script>
+
+    <script>
+        var $imageupload = $('.imageupload');
+        $imageupload.imageupload({
+          maxWidth:600,
+          maxHeight:300
+        });
+
+        $('#imageupload-disable').on('click', function() {
+            $imageupload.imageupload('disable');
+            $(this).blur();
+        })
+
+        $('#imageupload-enable').on('click', function() {
+            $imageupload.imageupload('enable');
+            $(this).blur();
+        })
+
+        $('#imageupload-reset').on('click', function() {
+            $imageupload.imageupload('reset');
+            $(this).blur();
+        });
+    </script>
+    <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 10) {
+        $('nav').addClass('shrink');
+      } else {
+        $('nav').removeClass('shrink');
+      }
+    });
+    </script>
+    <script>
+    $('.editBtn').on('click', function(event) {
+        event.preventDefault();
+
+        if ($('.disable').attr('disabled')){
+            $('.disable').removeAttr('disabled');
+        }else{
+            $('.disable').attr('disabled', 'disabled');
+        }
+      });
+      </script>
+  </body>
+</html>

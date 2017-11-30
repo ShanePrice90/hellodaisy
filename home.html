@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hello Daisy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container companionHome">
+      <!-- USING BOOTSTRAP 3.0.3 -->
+      <nav class="navbar navbar-inverse navbar-fixed-top container-fluid">
+        <div class="col-xs-3 text-left">
+          <div class="notificationMenu">
+            <img src="img/icon-notifications.png" alt="Notifications Icon" class="headerIcon" data-toggle="dropdown" />
+            <span class="notification badge">86</span>
+            <ul class="dropdown-menu">
+              <div class="menuHeader">
+                <h3>Notifications</h3>
+                <h5>86 new</h5>
+                <div class="clearfix"></div>
+              </div>
+              <li><a href="#">Photos <span class="notification-menu badge">37</span></a> </li>
+              <li><a href="#">Videos <span class="notification-menu badge">11</span></a></li>
+              <li><a href="#">Comments <span class="notification-menu badge">38</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 text-center">
+          <img src="img/Hello-Daisy-Logo-White.png" alt="Hello Daisy Logo" class="logo img-responsive" />
+        </div>
+        <div class="col-xs-3 text-right">
+          <div class="hamburgerMenu">
+            <img src="img/icon-menu.png" alt="Menu Icon" class="headerIcon" data-toggle="dropdown" />
+            <ul class="dropdown-menu dropdown-menu-right">
+              <div class="menuHeader">
+                <h3>Navigation</h3>
+                <div class="clearfix"></div>
+              </div>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="create-post.html">Create a Post</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="index.html">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--<div class="row">
+        <div class="col-xs-3 text-left">
+          <div class="notificationMenu">
+            <img src="img/icon-notifications.png" alt="Notifications Icon" class="headerIcon" data-toggle="dropdown" />
+            <span class="notification badge">86</span>
+            <ul class="dropdown-menu">
+              <div class="menuHeader">
+                <h3>Notifications</h3>
+                <h5>86 new</h5>
+                <div class="clearfix"></div>
+              </div>
+              <li><a href="#">Photos <span class="notification-menu badge">37</span></a> </li>
+              <li><a href="#">Videos <span class="notification-menu badge">11</span></a></li>
+              <li><a href="#">Comments <span class="notification-menu badge">38</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 text-center">
+          <img src="img/Hello-Daisy-Logo-White.png" alt="Hello Daisy Logo" class="logo img-responsive" />
+        </div>
+        <div class="col-xs-3 text-right">
+          <div class="hamburgerMenu">
+            <img src="img/icon-menu.png" alt="Menu Icon" class="headerIcon" data-toggle="dropdown" />
+            <ul class="dropdown-menu dropdown-menu-right">
+              <div class="menuHeader">
+                <h3>Navigation</h3>
+                <div class="clearfix"></div>
+              </div>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="create-post.html">Create a Post</a></li>
+              <li><a href="index.html">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>-->
+      <div class="row">
+        <div class="introContent">
+          <div class="col-xs-9">
+            <h1 class="welcomeText">Welcome Shane,</h1>
+            <p class="welcomeInstruction">Why not send Grandma a new post?</p>
+          </div>
+          <div class="col-xs-3 text-right">
+            <a href="create-post.html">
+              <img src="img/icon-add-content.png" alt="Add New Content Icon" class="headerIcon" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Hannah</h3>
+            <h4 class="timeStamp">35 Mins ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">Loving the weather here in Spain!</p>
+            <img src="img/recent-post-image-1.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <button class="btn commentButton" data-toggle="modal" data-target="#recentPostOne">
+              <i class="fa fa-comment-o" aria-hidden="true"></i> 114
+            </button>
+            <button class="btn menuButton pull-right">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">David</h3>
+            <h4 class="timeStamp">3 hours ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">Check out the latest addition to the family!</p>
+            <img src="img/recent-post-image-2.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <button class="btn commentButton" data-toggle="modal" data-target="#recentPostTwo">
+              <i class="fa fa-comment-o" aria-hidden="true"></i> 37
+            </button>
+            <button class="btn menuButton pull-right">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Amy</h3>
+            <h4 class="timeStamp">2 days ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">A view to die for!</p>
+            <img src="img/recent-post-image-3.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <button class="btn commentButton" data-toggle="modal" data-target="#recentPostThree">
+              <i class="fa fa-comment-o" aria-hidden="true"></i> 64
+            </button>
+            <button class="btn menuButton pull-right">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Amy</h3>
+            <h4 class="timeStamp">2 days ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">A view to die for!</p>
+            <img src="img/audio-file-preview.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <button class="btn commentButton" data-toggle="modal" data-target="#recentPostThree">
+              <i class="fa fa-comment-o" aria-hidden="true"></i> 64
+            </button>
+            <button class="btn menuButton pull-right">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recentPostOne" class="modal fade" role="dialog">
+      <div class="container">
+        <!--
+        <div class="col-xs-6 text-left">
+          <img src="img/icon-write-comment.png" class="headerIcon" data-toggle="modal" data-target="#recentPostOneComment" data-dismiss="modal" />
+        </div>
+        <div class="col-xs-6 text-right">
+          <img src="img/icon-close.png" class="headerIcon" data-dismiss="modal" />
+        </div>
+      -->
+        <div class="col-xs-12">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Hannah</h3>
+            <h4 class="timeStamp">2 weeks ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">Loving the weather here in Spain!</p>
+            <img src="img/recent-post-image-1.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <div class="postComments">
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">David<br/>
+                    <span class="commentTimestamp">35 mins ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">Looks amazing!!!</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-4.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Rachel<br/>
+                    <span class="commentTimestamp">1 hour ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">Wish I was there</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Amy<br/>
+                    <span class="commentTimestamp">3 hours ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">I'm so jealous xo</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-5.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Mikey<br/>
+                    <span class="commentTimestamp">1 day ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">How hot is it? x</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div id="additionalCommentsOne" class="collapse">
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">David<br/>
+                      <span class="commentTimestamp">2 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">What a lovely time you must be having</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Hannah<br/>
+                      <span class="commentTimestamp">2 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">Have a fantastic holiday!</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Amy<br/>
+                      <span class="commentTimestamp">5 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">I'm so envious :(</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-5.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Mikey<br/>
+                      <span class="commentTimestamp">6 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">WOW!</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="moreCommentsLink" data-toggle="collapse" data-target="#additionalCommentsOne">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <p>Read all 114 Comments</p>
+              </div>
+              <div class="writeCommentLink" data-toggle="modal" data-target="#recentPostOneComment" data-dismiss="modal">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <p>Write a Comment</p>
+              </div>
+              <div class="closeWindowLink" data-dismiss="modal">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <p>Close Window</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recentPostTwo" class="modal fade" role="dialog">
+      <div class="container">
+        <!--
+        <div class="col-xs-6 text-left">
+          <img src="img/icon-write-comment.png" class="headerIcon" data-toggle="modal" data-target="#recentPostOneComment" data-dismiss="modal" />
+        </div>
+        <div class="col-xs-6 text-right">
+          <img src="img/icon-close.png" class="headerIcon" data-dismiss="modal" />
+        </div>
+      -->
+        <div class="col-xs-12">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">David</h3>
+            <h4 class="timeStamp">3 hours ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">Check out the latest addition to the family!</p>
+            <img src="img/recent-post-image-2.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <div class="postComments">
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">David<br/>
+                    <span class="commentTimestamp">35 mins ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">Looks amazing!!!</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-4.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Rachel<br/>
+                    <span class="commentTimestamp">1 hour ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">Wish I was there</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Amy<br/>
+                    <span class="commentTimestamp">3 hours ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">I'm so jealous xo</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-5.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Mikey<br/>
+                    <span class="commentTimestamp">1 day ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">How hot is it? x</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div id="additionalCommentsTwo" class="collapse">
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">David<br/>
+                      <span class="commentTimestamp">2 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">What a lovely time you must be having</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Hannah<br/>
+                      <span class="commentTimestamp">2 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">Have a fantastic holiday!</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Amy<br/>
+                      <span class="commentTimestamp">5 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">I'm so envious :(</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-5.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Mikey<br/>
+                      <span class="commentTimestamp">6 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">WOW!</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="moreCommentsLink" data-toggle="collapse" data-target="#additionalCommentsTwo">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <p>Read all 37 Comments</p>
+              </div>
+              <div class="writeCommentLink" data-toggle="modal" data-target="#recentPostTwoComment" data-dismiss="modal">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <p>Write a Comment</p>
+              </div>
+              <div class="closeWindowLink" data-dismiss="modal">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <p>Close Window</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recentPostThree" class="modal fade" role="dialog">
+      <div class="container">
+        <!--
+        <div class="col-xs-6 text-left">
+          <img src="img/icon-write-comment.png" class="headerIcon" data-toggle="modal" data-target="#recentPostOneComment" data-dismiss="modal" />
+        </div>
+        <div class="col-xs-6 text-right">
+          <img src="img/icon-close.png" class="headerIcon" data-dismiss="modal" />
+        </div>
+      -->
+        <div class="col-xs-12">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Amy</h3>
+            <h4 class="timeStamp">2 days ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">A view to die for!</p>
+            <img src="img/recent-post-image-3.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <div class="postComments">
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">David<br/>
+                    <span class="commentTimestamp">35 mins ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">Looks amazing!!!</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-4.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Rachel<br/>
+                    <span class="commentTimestamp">1 hour ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">Wish I was there</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Amy<br/>
+                    <span class="commentTimestamp">3 hours ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">I'm so jealous xo</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="comment">
+                <div class="col-xs-6 col-md-2">
+                  <img src="img/user-post-bio-image-5.png" class="img-responsive pull-left userPostImage" />
+                  <h3 class="commentUser">Mikey<br/>
+                    <span class="commentTimestamp">1 day ago</span>
+                  </h3>
+                </div>
+                <div class="col-xs-6 col-md-10">
+                  <p class="commentText">How hot is it? x</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div id="additionalCommentsThree" class="collapse">
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">David<br/>
+                      <span class="commentTimestamp">2 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">What a lovely time you must be having</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Hannah<br/>
+                      <span class="commentTimestamp">2 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">Have a fantastic holiday!</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Amy<br/>
+                      <span class="commentTimestamp">5 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">I'm so envious :(</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="comment">
+                  <div class="col-xs-6 col-md-2">
+                    <img src="img/user-post-bio-image-5.png" class="img-responsive pull-left userPostImage" />
+                    <h3 class="commentUser">Mikey<br/>
+                      <span class="commentTimestamp">6 days ago</span>
+                    </h3>
+                  </div>
+                  <div class="col-xs-6 col-md-10">
+                    <p class="commentText">WOW!</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="moreCommentsLink" data-toggle="collapse" data-target="#additionalCommentsThree">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <p>Read all 64 Comments</p>
+              </div>
+              <div class="writeCommentLink" data-toggle="modal" data-target="#recentPostThreeComment" data-dismiss="modal">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <p>Write a Comment</p>
+              </div>
+              <div class="closeWindowLink" data-dismiss="modal">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <p>Close Window</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recentPostOneComment" class="modal fade" role="dialog">
+      <div class="container">
+        <!--
+        <div class="col-xs-6 text-left">
+        </div>
+        <div class="col-xs-6 text-right">
+          <img src="img/icon-close.png" class="headerIcon" data-dismiss="modal" />
+        </div>
+      -->
+        <div class="col-xs-12">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Hannah</h3>
+            <h4 class="timeStamp">2 weeks ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">Loving the weather here in Spain!</p>
+            <img src="img/recent-post-image-1.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <div class="writeComment">
+              <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Write a comment or reply to Hannah"></textarea>
+              </div>
+              <button class="btn btn-tertiary pull-right" data-dismiss="modal">Post Comment</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recentPostTwoComment" class="modal fade" role="dialog">
+      <div class="container">
+        <!--
+        <div class="col-xs-6 text-left">
+        </div>
+        <div class="col-xs-6 text-right">
+          <img src="img/icon-close.png" class="headerIcon" data-dismiss="modal" />
+        </div>
+      -->
+        <div class="col-xs-12">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-2.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">David</h3>
+            <h4 class="timeStamp">3 hours ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">Check out the latest addition to the family!</p>
+            <img src="img/recent-post-image-2.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <div class="writeComment">
+              <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Write a comment or reply to David"></textarea>
+              </div>
+              <button class="btn btn-tertiary pull-right" data-dismiss="modal">Post Comment</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recentPostThreeComment" class="modal fade" role="dialog">
+      <div class="container">
+        <!--
+        <div class="col-xs-6 text-left">
+        </div>
+        <div class="col-xs-6 text-right">
+          <img src="img/icon-close.png" class="headerIcon" data-dismiss="modal" />
+        </div>
+      -->
+        <div class="col-xs-12">
+          <div class="recentPost">
+            <img src="img/user-post-bio-image-3.png" class="img-responsive pull-left userPostImage" />
+            <h3 class="userName">Amy</h3>
+            <h4 class="timeStamp">2 days ago</h4>
+            <div class="clearfix"></div>
+            <p class="postDesc">A view to die for!</p>
+            <img src="img/recent-post-image-3.png" alt="Recent Post Alt tag" class="img-responsive center-block" />
+            <div class="writeComment">
+              <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Write a comment or reply to David"></textarea>
+              </div>
+              <button class="btn btn-tertiary pull-right" data-dismiss="modal">Post Comment</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(".moreCommentsLink").click(function(){
+      $(this).hide();
+    });
+
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 10) {
+        $('nav').addClass('shrink');
+      } else {
+        $('nav').removeClass('shrink');
+      }
+    });
+    </script>
+  </body>
+</html>
