@@ -23,15 +23,18 @@
 
     <style>
     #myVideo {
-        background-color: #9ab87a;
+        background-color: #00607F;
+        width:100%;
     }
 
     #myAudio {
-        background-color: #9FD6BA;
+        background-color: #00607F;
+        width:100%;
     }
 
     #myImage {
-    background-color: #efc3e6;
+    background-color: #00607F;
+    width:100%;
     }
     </style>
 
@@ -88,8 +91,8 @@
         </div>
         <div class="col-xs-12">
           <div class="createPost">
-            <div class="row border-between">
-              <div class="col-xs-12 col-sm-3 text-center">
+            <div class="row border-between contentCTA">
+              <div class="col-xs-6 col-sm-3 text-center">
                 <div class="addContent">
                   <a href="#" data-toggle="modal" data-target="#takePhoto" id="take-photo">
                     <img src="img/icon-add-photo.png" class="img-responsive newPostIcon" />
@@ -97,15 +100,22 @@
                   <h3>Take Photo</h3>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-3 text-center">
+              <div class="col-xs-6 col-sm-3 text-center">
                 <div class="addContent">
-                  <a href="#" data-toggle="modal" data-target="#recordAudio" id="record-audio">
-                    <img src="img/icon-record-audio.png" class="img-responsive newPostIcon" />
-                  </a>
+                  <div class="desktopLink">
+                    <a href="#" data-toggle="modal" data-target="#recordAudio" id="record-audio">
+                      <img src="img/icon-record-audio.png" class="img-responsive newPostIcon" />
+                    </a>
+                  </div>
+                  <!--<div class="mobileLink">
+                    <a href="#" class="input-file" id="record-audio">
+                      <img src="img/icon-record-audio.png" class="img-responsive newPostIcon" />
+                    </a>
+                  </div>-->
                   <h3>Record Audio</h3>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-3 text-center">
+              <div class="col-xs-6 col-sm-3 text-center">
                 <div class="addContent">
                   <a href="#" data-toggle="modal" data-target="#recordVideo" id="record-video">
                     <img src="img/icon-record-video.png" class="img-responsive newPostIcon" />
@@ -113,7 +123,7 @@
                   <h3>Record Video</h3>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-3 text-center">
+              <div class="col-xs-6 col-sm-3 text-center">
                 <div class="addContent">
                   <a href="#" id="writeText">
                     <img src="img/icon-write-text.png" class="img-responsive newPostIcon" />

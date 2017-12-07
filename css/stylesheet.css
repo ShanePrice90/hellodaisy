@@ -587,12 +587,6 @@ textarea:-moz-placeholder { /* Firefox 18- */
    display: none;
 }
 
-@media screen and (max-width:768px) {
-  .border-between > [class*='col-']:before {
-    background:none !important;
-  }
-}
-
 .postDetails {
   margin-top:30px;
 }
@@ -733,4 +727,8 @@ textarea:-moz-placeholder { /* Firefox 18- */
   margin-top:15px;
 }
 
-/* Text to image */
+@media screen and (max-width:768px) {
+  .border-between > [class*='col-']:before {
+    background:none !important;
+  }
+}
